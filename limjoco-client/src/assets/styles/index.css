@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── NU Blue scale ── */
+  --color-nu-blue-50:  #eef1fb;
+  --color-nu-blue-100: #d4dcf5;
+  --color-nu-blue-200: #a9b8eb;
+  --color-nu-blue-400: #5470d4;
+  --color-nu-blue-600: #2340b8;
+  --color-nu-blue-800: #152880;
+  --color-nu-blue-900: #0e1d4a;
+  --color-nu-blue-950: #080f28;
+  --color-nu-blue:     #1a2e6f;
+
+  /* ── NU Yellow scale ── */
+  --color-nu-yellow-50:  #fffbeb;
+  --color-nu-yellow-100: #fef3c7;
+  --color-nu-yellow-200: #fde68a;
+  --color-nu-yellow-400: #f5c518;
+  --color-nu-yellow-500: #eab308;
+  --color-nu-yellow-600: #ca8a04;
+  --color-nu-yellow:     #f5c518;
+}
+
+@layer base {
+  body {
+    @apply bg-nu-blue-50 text-nu-blue-900 antialiased;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
